@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cibro-Music</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+<!--
+
+TemplateMo 595 3d coverflow
+
+https://templatemo.com/tm-595-3d-coverflow
+
+-->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo-container">
+            <div class="logo">
+              
+            </div>
+            <div class="logo-text">Cibro-Music</div>
+        </a>
+        
+        <nav class="main-menu" id="mainMenu">
+            <a href="#acasa" class="menu-item active">Acasa</a>
+            <a href="#despre" class="menu-item">Despre</a>
+            <a href="#contact" class="menu-item">Contact</a>
+            
+        </nav>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- acasa Section -->
+    <section id="acasa" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">Urmeaza</h2>
+                <p id="current-description">Fii pe faza</p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="https://s9.ro/2jg8" alt="Urmeaza" loading="">
+                        </div>
+                        <div class="reflection"></div>
+                   
+                    </div><div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="https://s9.ro/2jg8" alt="Urmeaza" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                   
+                    </div><div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="https://s9.ro/2jg8" alt="Urmeaza" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                   
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+                
+                <!-- Play/Pause Button -->
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- despre Section -->
+    <section id="despre" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>Descoperim muzica impreuna </h2>
+                <p>Sunt un student ce incearca sa fie artist</p>
+            </div>
+            
+            <div class="about-main">
+                <div class="about-visual">
+                    <div class="showcase-display">
+                        <div class="showcase-main">
+                            <div class="corner-decoration top-left"></div>
+                            <div class="corner-decoration bottom-right"></div>
+                            <a href="https://www.youtube.com/@cibro.m" class="social-btn" title="Facebook">
+                                <img src="https://s9.ro/2jg8" alt="YouTube" style="width: 330px; height: auto;">
+                            </a>
+                           
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-info">
+                    <h3>Hai sa iti zic cateva chesti despre mine</h3>
+                    <p>De la 16 ani am pornit pe acest drum atunci cand miam cumparat laptopu de pe care lucrez si acum.</p>
+                    <p>Desi am trecut prin multe sunt fericit ca acum tu poti intra aici sa imi asculti trairile. De abia asept sa iti vad parerea despre prima mea piesa la care lucrez de ceva timp.</p>
+                   <h3>Ce vreau sa exprim</h3> 
+                    <ul class="feature-list">
+                        <li>Ca poti reusi</li>
+                        <li>Tu contezi cel mai mult</li>
+                        <li>Viata e pre frumoasa pentru prejudecati</li>
+                    </ul>
+                    
+                    <a href="#contact" class="cta-button">
+                        Hai sa ne cunoastem
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat-item">
+                   
+                    <div class="stat-number">Ai grija de visul tau.</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>Ai o idee</h2>
+                <p>Eu zic hai sa ne cunoastem. Poate iese ceva fain.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <h3>Hai sa vorbim.</h3>
+                    <p> Sunt sigur ca orice idee de colaborare are scopul ei. Va iesi ceva fain si ne va ajuta pe amandoi.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>ciprian.andronic15@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>Dupa ce ne cunoastem pe email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>La fel ca la telefon.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Ore de contact </h4>
+                                <p>Oricand vrei tu 😁</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-buttons">
+                            <a href="https://www.youtube.com/@cibro.m" class="social-btn" title="Facebook">
+                                 <img src="https://png.pngtree.com/png-clipart/20221018/ourmid/pngtree-youtube-social-media-3d-stereo-png-image_6308427.png" alt="YouTube" style="width: 30px; height: auto;">
+                            </a>
+                            <a href="http://tiktok.com/@cibro.mu" class="social-btn" title="Twitter">
+                                <img src="https://cdn.worldvectorlogo.com/logos/tiktok-1.svg" alt="YouTube" style="width: 30px; height: auto;">
+                            </a>
+                            <a href="https://www.instagram.com/cibro.mu" class="social-btn" title="LinkedIn">
+                                <img src="https://img.freepik.com/premium-psd/instagram-logo_971166-164497.jpg?semt=ais_rp_progressive&w=740&q=80" alt="YouTube" style="width: 30px; height: auto;">
+                            </a>
+                            <a href="https://spotify.com" class="social-btn" title="Instagram">
+                                <img src="https://www.gmfus.org/sites/default/files/inline-images/Spotify_logo_without_text.svg__1.png" alt="YouTube" style="width: 30px; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                      <img src="https://s9.ro/2jg8" alt="Urmeaza" style="width: 400px; height: auto;"loading=""> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 3D Coverflow. All rights reserved. | Designed by <a href="https://templatemo.com" target="_blank" rel="noopener noreferrer">TemplateMo</a>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy" onclick="event.preventDefault(); alert('Privacy Policy page would go here');">Privacy Policy</a>
+                <a href="#terms" onclick="event.preventDefault(); alert('Terms of Service page would go here');">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
+
+<script src="templatemo-3d-coverflow-scripts.js"></script>
+
+</body>
+</html>
