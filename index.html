@@ -13,6 +13,48 @@ TemplateMo 595 3d coverflow
 https://templatemo.com/tm-595-3d-coverflow
 
 -->
+<style>
+    /* Aceasta este „plasa de siguranță” pentru mobil */
+    @media (max-width: 768px) {
+        /* Prevenim scroll-ul orizontal care strică tot layout-ul */
+        body, html {
+            overflow-x: hidden !important;
+            width: 100% !important;
+        }
+
+        /* Facem secțiunea „Despre” să curgă vertical pe mobil */
+        .about-main, .contact-container {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            text-align: center !important;
+        }
+
+        /* Corectăm imaginile care forțau lățimea paginii */
+        .about-visual img, .contact-form-section img {
+            width: 90% !important; /* Ocupă aproape tot ecranul mobilului */
+            height: auto !important;
+            max-width: 350px !important; /* Dar nu mai mult de 350px */
+            margin: 0 auto !important;
+        }
+
+        /* Ajustăm spațierea pentru texte pe mobil */
+        .about-info, .contact-info-section {
+            padding: 20px !important;
+            width: 100% !important;
+        }
+
+        /* Mărim butoanele de social media să fie mai ușor de apăsat */
+        .social-buttons {
+            justify-content: center !important;
+            gap: 15px !important;
+        }
+        
+        .social-btn img {
+            width: 40px !important; /* Mai mari pentru degete pe mobil */
+        }
+    }
+</style>
 </head>
 <body>
     <!-- Header -->
@@ -251,5 +293,4 @@ https://templatemo.com/tm-595-3d-coverflow
 <script src="templatemo-3d-coverflow-scripts.js"></script>
 
 </body>
-
 </html>
